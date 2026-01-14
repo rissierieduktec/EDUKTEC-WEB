@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language School - Cursos de Idiomas</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="font-sans text-gray-700 bg-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 font-heading font-bold text-2xl text-primary">
+                <div class="bg-secondary p-2 rounded-lg text-white">
+                    <i data-lucide="languages" class="w-6 h-6 text-primary"></i>
+                </div>
+                Lingua<span class="text-secondary">Mundi</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-primary font-semibold transition">Inicio</a>
+                <a href="#features" class="text-gray-600 hover:text-primary font-semibold transition">Por qué
+                    elegirnos</a>
+                <a href="#courses" class="text-gray-600 hover:text-primary font-semibold transition">Cursos</a>
+                <a href="#contact"
+                    class="px-6 py-2 bg-primary text-white font-bold rounded-full hover:bg-opacity-90 transition shadow-lg transform hover:-translate-y-0.5">Contactar</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 flex flex-col space-y-4 shadow-lg">
+            <a href="#home" class="block text-gray-600 font-semibold">Inicio</a>
+            <a href="#features" class="block text-gray-600 font-semibold">Por qué elegirnos</a>
+            <a href="#courses" class="block text-gray-600 font-semibold">Cursos</a>
+            <a href="#contact" class="block text-primary font-bold">Contactar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-light overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                alt="Background pattern" class="w-full h-full object-cover">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-secondary/20 text-yellow-700 text-sm font-bold mb-4 tracking-wider uppercase">Educación
+                        de Calidad</span>
+                    <h1 class="text-4xl lg:text-6xl font-heading font-extrabold text-primary leading-tight mb-6">
+                        Aprende un nuevo idioma, <span class="text-secondary">abre tu mundo</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Sumérgete en una experiencia de aprendizaje única con profesores nativos y metodología moderna.
+                        Domina el inglés, francés, alemán y más.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#courses"
+                            class="px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition flex items-center justify-center gap-2">
+                            Ver Cursos <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#features"
+                            class="px-8 py-4 bg-white text-primary border-2 border-primary font-bold rounded-lg hover:bg-gray-50 transition flex items-center justify-center">
+                            Saber Más
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div
+                        class="absolute -top-10 -right-10 w-64 h-64 bg-secondary rounded-full opacity-20 filter blur-3xl animate-pulse">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary rounded-full opacity-20 filter blur-3xl">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Estudiantes aprendiendo"
+                        class="relative rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500 z-10 border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="bg-primary py-12 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">15+</div>
+                    <div class="text-sm opacity-80">Años de Experiencia</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">10k+</div>
+                    <div class="text-sm opacity-80">Estudiantes Graduados</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">50+</div>
+                    <div class="text-sm opacity-80">Profesores Nativos</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-heading font-bold text-secondary mb-2">6</div>
+                    <div class="text-sm opacity-80">Idiomas Disponibles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-heading font-bold text-primary mb-4">¿Por qué elegir LinguaMundi?
+                </h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600">Ofrecemos un entorno de aprendizaje dinámico diseñado para acelerar tu fluidez
+                    y confianza.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i data-lucide="globe-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Certificación Internacional</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Nuestros cursos están alineados con el Marco Común Europeo de Referencia para las lenguas
+                        (MCER).
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition">
+                        <i data-lucide="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Grupos Reducidos</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Máximo de 8 estudiantes por clase para garantizar una atención personalizada y más tiempo de
+                        práctica.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 bg-red-100 text-accent rounded-full flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition">
+                        <i data-lucide="monitor" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Plataforma Híbrida</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Combina clases presenciales con recursos online accesibles 24/7 para reforzar tu aprendizaje.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl lg:text-4xl font-heading font-bold text-primary mb-4">Nuestros Cursos Destacados
+                    </h2>
+                    <p class="text-gray-600">Elige el idioma que transformará tu futuro.</p>
+                </div>
+                <a href="#"
+                    class="hidden md:inline-flex items-center font-bold text-primary hover:text-secondary transition mt-4 md:mt-0">
+                    Ver todos los programas <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Inglés" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm">
+                            POPULAR
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-semibold text-secondary uppercase tracking-wider">Inglés</span>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <i data-lucide="clock" class="w-3 h-3 mr-1"></i> 6 Meses
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Inglés de Negocios</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-2">Perfecciona tu inglés para el entorno corporativo.
+                            Presentaciones, negociaciones y redacción.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profesor"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="text-sm font-medium text-gray-500">James W.</span>
+                            </div>
+                            <span class="text-lg font-bold text-primary">$120<span
+                                    class="text-sm font-normal text-gray-400">/mes</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Francés" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-semibold text-secondary uppercase tracking-wider">Francés</span>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <i data-lucide="clock" class="w-3 h-3 mr-1"></i> 4 Meses
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Francés Intensivo</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-2">Desde "Bonjour" hasta conversaciones fluidas.
+                            Sumérgete en la cultura francesa.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profesor"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="text-sm font-medium text-gray-500">Amélie D.</span>
+                            </div>
+                            <span class="text-lg font-bold text-primary">$110<span
+                                    class="text-sm font-normal text-gray-400">/mes</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="relative h-56">
+                        <img src="https://images.unsplash.com/photo-1527866959252-deab85ef7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Alemán" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-semibold text-secondary uppercase tracking-wider">Alemán</span>
+                            <div class="flex items-center text-gray-400 text-xs">
+                                <i data-lucide="clock" class="w-3 h-3 mr-1"></i> 8 Meses
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Alemán para Principiantes</h3>
+                        <p class="text-gray-600 mb-6 line-clamp-2">Estructura gramatical sólida y vocabulario esencial
+                            para vivir o trabajar en Alemania.</p>
+                        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Profesor"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="text-sm font-medium text-gray-500">Hans M.</span>
+                            </div>
+                            <span class="text-lg font-bold text-primary">$130<span
+                                    class="text-sm font-normal text-gray-400">/mes</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center md:hidden">
+                <a href="#" class="inline-flex items-center font-bold text-primary hover:text-secondary transition">
+                    Ver todos los programas <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        class="rounded-2xl shadow-lg mt-8" alt="Estudiantes en grupo">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        class="rounded-2xl shadow-lg" alt="Clase particular">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl lg:text-4xl font-heading font-bold text-primary mb-6">Más que una escuela, una
+                        comunidad</h2>
+                    <p class="text-gray-600 mb-6 text-lg">
+                        En LinguaMundi, creemos que aprender un idioma es mucho más que memorizar vocabulario. Se trata
+                        de conectar con personas, entender culturas y expandir tus horizontes.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Eventos culturales mensuales y noches de conversación.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Acceso a biblioteca multimedia y laboratorio de idiomas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-secondary mr-3 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-700">Asesoramiento para exámenes oficiales (TOEFL, DELF, etc).</span>
+                        </li>
+                    </ul>
+                    <a href="#contact"
+                        class="px-8 py-3 bg-white text-primary border-2 border-primary font-bold rounded-full hover:bg-primary hover:text-white transition inline-block">
+                        Conoce al Equipo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact -->
+    <section id="contact" class="relative py-24 bg-primary text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/world-map.png')]">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl max-w-4xl mx-auto flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2 text-gray-800">
+                    <h3 class="text-3xl font-heading font-bold text-primary mb-4">¿Listo para empezar?</h3>
+                    <p class="text-gray-600 mb-8">
+                        Reserva tu <strong>clase de prueba gratuita</strong> hoy mismo. Completa el formulario y nos
+                        pondremos en contacto contigo en menos de 24 horas.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">+34 912 345 678</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">Calle Educación 123, Madrid</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">info@linguamundi.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <form class="space-y-4"
+                        onsubmit="event.preventDefault(); alert('Gracias por tu interés. Nos pondremos en contacto pronto.');">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Nombre Completo</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                                placeholder="Juan Pérez" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Correo Electrónico</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                                placeholder="juan@ejemplo.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Idioma de Interés</label>
+                            <select
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition">
+                                <option>Inglés</option>
+                                <option>Francés</option>
+                                <option>Alemán</option>
+                                <option>Italiano</option>
+                            </select>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-4 bg-secondary text-primary font-bold rounded-lg hover:bg-yellow-400 transition shadow-lg transform hover:-translate-y-0.5">
+                            Solicitar Clase Gratis
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="#" class="flex items-center gap-2 font-heading font-bold text-xl mb-4">
+                        <i data-lucide="languages" class="w-5 h-5 text-secondary"></i> LinguaMundi
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Transformando vidas a través del aprendizaje de idiomas desde 2010.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Cursos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-secondary transition">Inglés General</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Preparación TOEFL</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Francés Intensivo</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Alemán Básico</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-secondary transition">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Carreras</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-primary transition">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-primary transition">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-primary transition">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                &copy; 2024 LinguaMundi. Todos los derechos reservados. Diseño inspirado en Nicepage.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
