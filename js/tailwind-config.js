@@ -6,10 +6,10 @@ tailwind.config = {
                 heading: ['Montserrat', 'sans-serif'],
             },
             colors: {
-                primary: '#2e3b55', // Azul oscuro profundo
-                secondary: '#f1c40f', // Amarillo vibrante
-                accent: '#e74c3c', // Rojo suave para acciones
-                light: '#f8f9fa',
+                primary: '#0056b3', // Azul Tecnológico (matching logo)
+                secondary: '#c0392b', // Rojo intenso (matching logo 'K')
+                accent: '#1abc9c', // Turquesa para detalles tech
+                light: '#f4f6f9', // Gris muy claro para fondos
             }
         }
     }
